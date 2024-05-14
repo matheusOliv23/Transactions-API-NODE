@@ -5,6 +5,7 @@ import { kknex } from '../database';
 import { checkSessionIdExists } from '../middleware/check-session-id-exists';
 
 export async function transactionsRoutes(app: FastifyInstance) {
+
   app.get('/', { preHandler: [checkSessionIdExists] }, async (req, res) => {
     const { sessionId } = req.cookies;
 
@@ -42,7 +43,9 @@ export async function transactionsRoutes(app: FastifyInstance) {
     return { summary };
   });
 
-  app.post('/', { preHandler: [checkSessionIdExists] }, async (req, res) => {
+
+
+  app.post('/', async (req, res) => {
     const createTransactionBodySchema = z.object({
       title: z.string(),
       amount: z.number({ message: 'Valor precisa ser um número' }),
