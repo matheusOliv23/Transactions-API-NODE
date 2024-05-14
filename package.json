@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "test": "vitest",
     "dev": "tsx watch src/server.ts",
     "lint": "eslint src --ext .ts --fix",
+    "build": "tsup src",
     "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js"
   },
   "keywords": [],
@@ -19,6 +23,7 @@
     "@types/supertest": "^6.0.2",
     "eslint": "^9.2.0",
     "supertest": "^7.0.0",
+    "tsup": "^8.0.2",
     "tsx": "^4.9.5",
     "typescript": "^5.4.5",
     "vitest": "^1.6.0"
@@ -27,6 +32,7 @@
     "@fastify/cookie": "^9.3.1",
     "fastify": "^4.27.0",
     "knex": "^3.1.0",
+    "pg": "^8.11.5",
     "sqlite3": "^5.1.7",
     "zod": "^3.23.8"
   }

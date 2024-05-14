@@ -1,14 +1,16 @@
 # API Transactions Nodejs Fastify
 
-Api simples para transações para fins de estudo (não autenticada).
+Api simples de transações para fins de estudo (não autenticada).
 
 ## 🚀 Tecnologias
 
-- [Fastify](https://expressjs.com/pt-br/)
+- [Fastify](https://fastify.dev/)
 - [Typescript](https://www.typescriptlang.org/)
-- [Eslint](https://socket.io/)
-- [Knex](https://socket.io/)
-- [Zod](https://socket.io/)
+- [Vitest](https://vitest.dev/)
+- [Eslint](https://eslint.org/)
+- [Knex](https://knexjs.org/)
+- [Zod](https://zod.dev/)
+- [tsup](https://tsup.egoist.dev/)
 
 ## ✋🏻 Pré-requisitos
 
